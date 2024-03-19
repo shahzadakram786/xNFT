@@ -173,7 +173,6 @@ ul li{
     background-image: url(./images/lines.png);
     background-color:  #13082A ;
     height: auto;
-    /* height: 90vh; */
     padding: 1rem;
     /* position: relative; */
 
@@ -241,9 +240,16 @@ text-transform: capitalize;
 margin-top: 2rem;
 
  }
+ 
 #nft{
     color:rgb(165, 166, 246) ;
+    position: relative;
 }
+#line-below-nft{
+    position: absolute;
+     top: 5.5rem;
+    left: 100%;
+ }
 
  .TxtA p {
     color:#AB8FC1;
