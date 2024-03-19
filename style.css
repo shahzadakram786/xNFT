@@ -92,13 +92,54 @@ ul li{
     cursor: pointer;
  }
 
+/* section working on stars */
+.stars{
+    position: absolute;
+}
+.first-stars{
+    height: 20px;
+    width: 20px; 
+   
+}
+#star1{
+    top: 3rem;
+    left: 14rem;
+    filter: blur(3px);
+}
+
+#star2{
+ 
+    top: 3rem;
+    left: 60rem;
+    filter: blur(3px);
+  
+}
+#star3{
+    top: 5rem;
+    right: 9.5rem;
+    filter: blur(2px);
+
+}
+#star4{
+    height:18px ;
+    width: 18px;
+    top: 13.5rem;
+    left: 6.5rem;
+    filter: blur(0px);
+}
+#star5{
+    height: 10px;
+    width: 10px;
+    top: 15.5rem;
+    left: 4.5rem;
+    filter: blur(0px);
+}
 
  /* section 1  */
 
  .section{
     background-image: url(./images/lines.png);
     background-color:  #13082A ;
-    background-size: contain;
     height: auto;
     /* height: 90vh; */
     padding: 1rem;
@@ -202,10 +243,10 @@ margin-top: 2rem;
  #blur2{
     position: absolute;
     right: 0;
-    border: 2px solid red;
-    bottom: 60px;
+    top: 69rem;
+    right: 0;
+    filter: blur(298px);
     z-index: 1;
-
  }
 
  /* this is for the buttons and the numbers part  */
