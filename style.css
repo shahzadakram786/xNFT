@@ -42,7 +42,7 @@ z-index: 2;
 #M-logo{
 /* background-color: yellow; */
 padding: 10px;
-
+z-index: 2;
 }
 #M-navs{
 
@@ -97,12 +97,13 @@ ul li{
  .section1{
     background: #13082A ;
     height: 89.5vh;
+    padding: 1rem;
     /* position: relative; */
 
 
  }
 
-
+/* blur div */
  .blur{
     background:#2C2A84;
     width: 20%;
@@ -112,5 +113,33 @@ ul li{
     position: absolute;
     left: -10rem;
     top: 0;
-    z-index: 1 ;
+    /* z-index: 1 ; */
+ }
+
+ /* first dic */
+.FrstDiv{
+    width: 90%;
+    z-index: 1;
+    display: flex;
+ align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+ /* text area top heading */
+ .TxtA{
+    background-color: red;
+    width: 50%;
+    display: flex;
+    padding: 10px;
+    /* text-align: center; */
+ }
+
+ .Imge{
+    width: 50%;
+ }
+ .TxtA h1{
+color: white;
+font-size: 5rem;
+
  }
