@@ -95,9 +95,10 @@ ul li{
 
  /* section 1  */
 
- .section1{
+ .section{
     background-image: url(./images/lines.png);
-    background: #13082A ;
+    background-color:  #13082A ;
+    background-size: contain;
     height: auto;
     /* height: 90vh; */
     padding: 1rem;
@@ -266,4 +267,14 @@ gap: 2rem;
  }
  #crate-btn{
     background: none;
+ }
+
+
+
+ /* now working on section 2 */
+
+
+ #section2{
+    height: 90vh ;
+    width: 100%;
  }
