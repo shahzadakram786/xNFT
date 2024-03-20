@@ -365,6 +365,47 @@ gap: 2rem;
 
 
  #section2{
-    height: 90vh ;
+    /* height: 90vh ; */
     width: 100%;
+    display: flex;
  }
+
+ .S2_main_all{
+    /* border: 2px solid white; */
+    margin-top: 9rem;
+ }
+
+
+ #tren-coll-h1 h1{ 
+    color: white;
+    font-size: 3rem;
+    padding: 2px;
+    /* padding: 2rem; */
+ }
+ 
+
+.S2_main1{
+    margin-top: 4rem;
+    background: rgb(38, 28, 58);
+    border: 2px solid rgb(123, 117, 135);
+    border-radius: 20px;
+    height: 90vh;
+
+}
+.headings_S2_main{
+    display: flex; 
+    padding: 1.2rem;
+    margin-top: 1rem;
+    color: white;
+}
+.headings_S2_main h1{
+    font-size: 2rem;
+    padding: 2px;
+    /* padding: 2rem; */
+}
+#s2_line{
+    width: 97%;
+    height: 2px;
+    background-color: rgb(165, 166, 246);
+    margin: auto;
+}
