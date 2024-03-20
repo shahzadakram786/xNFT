@@ -34,9 +34,9 @@ z-index: 2;
 .insider-header{
     display: flex;
     justify-content: space-between;
-    /* background-color: aqua; */
     width: 100%;
     padding: 10px;
+    z-index: 5;
 
 
 }
@@ -46,13 +46,13 @@ padding: 10px;
 z-index: 2;
 }
 #M-navs{
-
+      
     /* background: green; */
     padding-right: 3rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
+   
 }
 
  ul {
@@ -70,6 +70,7 @@ ul li{
     text-decoration: none;
     list-style: none;
     display: flex;
+   
 
     
 
@@ -77,6 +78,7 @@ ul li{
  ul li a{
     text-decoration: none;
     color: white;
+    cursor: pointer;
 
 
  }
@@ -288,6 +290,15 @@ margin-top: 2rem;
  }
 
  /* this is for the buttons and the numbers part  */
+.Num-and-btns{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+}
+
+#First_num{
+    display: flex;
+}
 
  .for-num{
     
