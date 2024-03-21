@@ -396,7 +396,7 @@ padding: 10px;
 }
 .headings_S2_main{
     display: flex;
-    padding: 0.6rem 0 0.5rem 1rem;
+    padding: 0.6rem 0 0.5rem 2rem;
     margin-top: 1rem;
     color: white;
 }
@@ -413,10 +413,68 @@ padding: 10px;
     padding-top: 0.7rem;
     /* padding: 2rem; */
 }
+#s3_under_collections{
+    width: 6%;
+    border-radius: 10px 10px 0 0 ;
+    border: 2px solid rgb(165, 166, 246) ;
+    margin-left: 11.7rem;
+    margin-top: auto;
+    /* margin-bottom: -1rem; */
+
+}
 #s2_line{
-    width: 97%;
+    width: 96%;
     border: 1px solid rgb(165, 166, 246) ;
    margin-top: -4rem;
     /* background-color: rgb(165, 166, 246); */
     margin: auto;
 }
+
+/* inside s2 maini */
+
+.S2_boxes{
+
+    background-color: red;
+    width: 96%;
+    padding: 1rem 0;
+    display: flex;
+    margin: 1rem auto;
+    gap: 2rem;
+}
+
+.S2_box1 > button{
+    font-size: 1rem;
+}
+.S2_box2> button img{
+height: 1.5rem;
+}
+
+
+.S2_box1 , .S2_box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    background-color: rgb(47, 37, 67);
+    padding: 2px 5px;
+    border-radius: 20px;
+    height: fit-content;
+}
+.S2_box1 > button,.S2_box2 > button{
+    padding: 1rem 1.5rem;
+    height: auto;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#S2_buttons> button{
+    padding: 0.7rem 1.5rem;
+    
+}
+
+.S2_box1 > button:hover ,.S2_box2 > button:hover{
+    background-color: rgb(152, 133, 191);
+}
+
