@@ -37,6 +37,37 @@ let fistData = first_numbers[i];
 </div>`
 
 
-    
-
 }
+
+
+
+
+// section 2 data from here 
+
+
+const tables_data = [{
+    id : 1,
+    Image: 'images/',
+    collection: 'MutantApeYachtClub',
+    floor_name: 4.31,
+    floor_nameB: 'ETH', 
+    floor_change: '-2.6%',
+    Volume:'1,181' ,
+    volumneB:ETH,
+    volumne_change: '-12.3%',
+    items:'19.5K',
+    Owners:'11.6K'
+},
+{
+    id : 2,
+    Image: 'images/',
+    collection: 'Azuki',
+    floor_name: 6.99,
+    floor_nameB: 'ETH', 
+    floor_change: '+0.1%',
+    Volume:'820.2' ,
+    volumneB:ETH,
+    volumne_change: '+614%',
+    items:'10K',
+    Owners:'4.4K'   
+}]
