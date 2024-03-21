@@ -21,6 +21,7 @@ title: 'Artwork'
 
 for (let i = 0; i < first_numbers.length; i++) {
 let fistData = first_numbers[i];
+
     console.log("thies +> ",fistData.number)
     console.log("thies +> ",fistData.title)
 
@@ -32,8 +33,7 @@ let fistData = first_numbers[i];
      <p>${fistData.title}</p>
     </span>
     
-  <div class="line" id="one-line"></div>
- 
+    ${i !== first_numbers.length - 1 ? '<div class="line" id="one-line"></div>' : ''} 
 </div>`
 
 
