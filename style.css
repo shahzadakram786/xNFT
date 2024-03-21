@@ -488,8 +488,10 @@ height: 1.5rem;
 }
 
 
-/* FOR HEADINGS OF SECTION 2 TABLE PART*/
 
+
+/* FOR HEADINGS OF SECTION 2 TABLE PART*/
+/* 
 .table_div_1{
     display: grid;
     grid-template-columns: 50px 400px 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -499,7 +501,23 @@ height: 1.5rem;
 }
 
 .table_div_1 h5{
-    /* font-size: 1rem; */
-    /* background-color: red; */
+ 
     color:rgb(168, 164, 177) ;
 }
+
+
+
+.ins_ins{
+    display: grid;
+    grid-template-columns: 50px 400px 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+} */
+
+/* now i am trybing with through table tags */
+
+
+
