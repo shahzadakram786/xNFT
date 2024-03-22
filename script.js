@@ -49,7 +49,7 @@ const tBody = document.querySelector('.tbody')
 
 const tables_data = [{
     id : 1,
-    Image: './images/table icons/div.sc-aXZVg.png',
+    Image: './images/table icons/1.png',
     collection: 'MutantApeYachtClub',
     floor_name: 4.31,
     floor_nameB: 'ETH', 
@@ -62,7 +62,7 @@ const tables_data = [{
 },
 {
     id : 2,
-    Image: './images/table icons/div.sc-aXZVg (1).png',
+    Image: './images/table icons/2.png',
     collection: 'Azuki',
     floor_name: 6.99,
     floor_nameB: 'ETH', 
@@ -75,7 +75,7 @@ const tables_data = [{
 },
 {
     id : 3,
-    Image: 'images/',
+    Image: './images/table icons/3.png',
     collection: 'Nobody',
     floor_name: 0.605,
     floor_nameB: 'ETH', 
@@ -89,7 +89,7 @@ const tables_data = [{
 ,
 {
     id : 4,
-    Image: 'images/',
+    Image: './images/table icons/4.png',
     collection: 'Pudgy Penguins',
     floor_name: 18.5,
     floor_nameB: 'ETH', 
@@ -103,7 +103,7 @@ const tables_data = [{
 ,
 {
     id : 5,
-    Image: 'images/',
+    Image: './images/table icons/5.png',
     collection: 'Farm Land by Pixels',
     floor_name: 1.2,
     floor_nameB: 'ETH', 
@@ -117,7 +117,7 @@ const tables_data = [{
 ,
 {
     id : 6,
-    Image: 'images/',
+    Image: './images/table icons/6.png',
     collection: 'TENJIN',
     floor_name: 0.541,
     floor_nameB: 'ETH', 
@@ -130,7 +130,7 @@ const tables_data = [{
 },
 {
     id : 7,
-    Image: 'images/',
+    Image: './images/table icons/7.png',
     collection: 'DeGods',
     floor_name: 2.999,
     floor_nameB: 'ETH', 
@@ -143,7 +143,7 @@ const tables_data = [{
 },
 {
     id : 8,
-    Image: 'images/',
+    Image: './images/table icons/8.png',
     collection: 'Pillheads NFT',
     floor_name: 0.145,
     floor_nameB: 'ETH', 
@@ -156,7 +156,7 @@ const tables_data = [{
 },
 {
     id : 9,
-    Image: 'images/',
+    Image: './images/table icons/9.png',
     collection: 'Lil Pudgys',
     floor_name: 1.739,
     floor_nameB: 'ETH', 
@@ -170,7 +170,7 @@ const tables_data = [{
 ,
 {
     id : 10,
-    Image: 'images/',
+    Image: './images/table icons/10.png',
     collection: 'Bored Ape Yacht Club',
     floor_name: 24.29,
     floor_nameB: 'ETH', 
@@ -183,11 +183,11 @@ const tables_data = [{
 },
 {
     id : 11,
-    Image: 'images/',
+    Image: './images/table icons/11.png',
     collection: 'BoredApekennelClub',
     floor_name: 1.28,
     floor_nameB: 'ETH', 
-    floor_change: '-3%',
+    floor_change: '-3%' ,
     Volume:'122.9' ,
     volumneB:'ETH',
     volumne_change: '+265.1%',
@@ -199,22 +199,44 @@ const tables_data = [{
 
 for(let i = 0 ; i < tables_data.length; i++) {
     let tableData = tables_data[i];
-console.log("rBLE", tableData.id)
+// console.log("rBLE", tableData.id)
+
+
+  let flrChange = parseInt(tableData.floor_change);
+  let volChange = parseInt(tableData.volumne_change);
+
+
+console.log("what 1",flrChange );
+console.log("what",volChange);
+
     tBody.innerHTML += 
    `
    <tr class="table_div_2">
-      <td>${tableData.id}</td>
+      <td class="ids">${tableData.id}</td>
       <td class="td_img_p"><img src="${tableData.Image}" alt="" id="T_img1" class="t_imges">
        <p>${tableData.collection}</p> </td>
       <td>${tableData.floor_name} <br> ${tableData.floor_nameB}</td>
-      <td>${tableData.floor_change}</td>
+      <td class="${flrChange > 0 ? 'positive' : 'negative'}">${tableData.floor_change}</td>
       <td>${tableData.Volume} <br> ${tableData.volumneB}</td>
-      <td>${tableData.volumne_change}</td>
+      <td class="${volChange > 0 ? 'positive' : 'negative'}">${tableData.volumne_change}</td>
       <td>${tableData.items}</td>
       <td>${tableData.Owners}</td>
     </tr>
 
    `
+// now i am working on a condition in which i can create a fucntion for positive and negative numbers
 
+
+
+// if(flrChange > 0 && volChange > 0 ){
+//     console.log("positive")
+//     console.log("positvive => ",tableData.floor_change);
+//     // flrChange.style.color = "green";
+
+// }else{
+//     console.log("negative")
+//     // volChange.style.color ="red";
+   
+// }
 }
 

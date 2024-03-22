@@ -548,6 +548,20 @@ width: 50px;
     gap: 5px;
 }
 
+
+
+
+.ids{
+    color:rgb(168, 164, 177);
+}
 /* #T_img1{
     position: absolute;
 } */
+
+.positive{
+    color: rgb(77, 184, 51);
+}
+
+.negative{
+    color: rgb(233, 73, 73);
+}
