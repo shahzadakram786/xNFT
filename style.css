@@ -451,7 +451,7 @@ height: 1.5rem;
     background-color: rgb(47, 37, 67);
     padding: 2px 5px;
     border-radius: 20px;
-    height: fit-content;
+    /* height: fit-content; */
 }
 .S2_box1 > button,.S2_box2 > button{
     padding: 1rem 1.5rem;
@@ -473,13 +473,13 @@ height: 1.5rem;
 /* main s2 table part */
 
 .S2_inside_main{
-    background-color:purple;
+    /* background-color:purple; */
     padding: 10px;
     /* height: 100%; */
 }
 
 .tablePart{
-    background-color: rgb(11, 20, 175);
+    /* background-color: rgb(11, 20, 175); */
     width: 96%;
     margin: auto;
 }
@@ -522,10 +522,32 @@ height: 1.5rem;
 }
 .table_div_2{
     color: white;
+    /* background-color: red; */
+    /* position: relative; */
     
 }
 .table_div_1 th,
 .table_div_2 td {
   padding: 10px;
-  text-align: center;
+  text-align: left;
+  /* justify-content: center; */
 }
+
+/* for tables images */
+.t_imges{
+height: 50px;
+width: 50px;
+
+
+/* position: absolute; */
+}
+
+.td_img_p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* #T_img1{
+    position: absolute;
+} */
