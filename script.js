@@ -42,12 +42,14 @@ let fistData = first_numbers[i];
 
 
 
-// section 2 data from here 
+// section 2 data from here
+
+const tBody = document.querySelector('.tbody')
 
 
 const tables_data = [{
     id : 1,
-    Image: 'images/',
+    Image: './images/table icons/div.sc-aXZVg.png',
     collection: 'MutantApeYachtClub',
     floor_name: 4.31,
     floor_nameB: 'ETH', 
@@ -60,7 +62,7 @@ const tables_data = [{
 },
 {
     id : 2,
-    Image: 'images/',
+    Image: './images/table icons/div.sc-aXZVg (1).png',
     collection: 'Azuki',
     floor_name: 6.99,
     floor_nameB: 'ETH', 
@@ -83,27 +85,134 @@ const tables_data = [{
     volumne_change: '-65.9%',
     items:'10K',
     Owners:'4.7K'   
+}
+,
+{
+    id : 4,
+    Image: 'images/',
+    collection: 'Pudgy Penguins',
+    floor_name: 18.5,
+    floor_nameB: 'ETH', 
+    floor_change: '+8.9%',
+    Volume:'563' ,
+    volumneB:'ETH',
+    volumne_change: '+39.9%',
+    items:'8.9K',
+    Owners:'4.6K'   
+}
+,
+{
+    id : 5,
+    Image: 'images/',
+    collection: 'Farm Land by Pixels',
+    floor_name: 1.2,
+    floor_nameB: 'ETH', 
+    floor_change: '-36%',
+    Volume:'496.6' ,
+    volumneB:'ETH',
+    volumne_change: '+297.7%',
+    items:'5K',
+    Owners:'2.1K'   
+}
+,
+{
+    id : 6,
+    Image: 'images/',
+    collection: 'TENJIN',
+    floor_name: 0.541,
+    floor_nameB: 'ETH', 
+    floor_change: '+11.5%',
+    Volume:'489.4' ,
+    volumneB:'ETH',
+    volumne_change: '+126.5%',
+    items:'8K',
+    Owners:'4.2K'   
+},
+{
+    id : 7,
+    Image: 'images/',
+    collection: 'DeGods',
+    floor_name: 2.999,
+    floor_nameB: 'ETH', 
+    floor_change: '-5.3%',
+    Volume:'437' ,
+    volumneB:'ETH',
+    volumne_change: '-47.2%',
+    items:'9K',
+    Owners:'2.8K'   
+},
+{
+    id : 8,
+    Image: 'images/',
+    collection: 'Pillheads NFT',
+    floor_name: 0.145,
+    floor_nameB: 'ETH', 
+    floor_change: '+107.4%',
+    Volume:'220.1' ,
+    volumneB:'ETH',
+    volumne_change: '+438.7%',
+    items:'6.7K',
+    Owners:'2K'   
+},
+{
+    id : 9,
+    Image: 'images/',
+    collection: 'Lil Pudgys',
+    floor_name: 1.739,
+    floor_nameB: 'ETH', 
+    floor_change: '+3%',
+    Volume:'201.7' ,
+    volumneB:'ETH',
+    volumne_change: '-52.5%',
+    items:'21.5K',
+    Owners:'8K'   
+}
+,
+{
+    id : 10,
+    Image: 'images/',
+    collection: 'Bored Ape Yacht Club',
+    floor_name: 24.29,
+    floor_nameB: 'ETH', 
+    floor_change: '-2.8%',
+    Volume:'142.3' ,
+    volumneB:'ETH',
+    volumne_change: '-7.1%',
+    items:'10K',
+    Owners:'5.7K'   
+},
+{
+    id : 11,
+    Image: 'images/',
+    collection: 'BoredApekennelClub',
+    floor_name: 1.28,
+    floor_nameB: 'ETH', 
+    floor_change: '-3%',
+    Volume:'122.9' ,
+    volumneB:'ETH',
+    volumne_change: '+265.1%',
+    items:'9.6K',
+    Owners:'5.2K'   
 }]
 
 
-const tBody = document.getElementsByTagName('tbody')
 
 for(let i = 0 ; i < tables_data.length; i++) {
     let tableData = tables_data[i];
-
+console.log("rBLE", tableData.id)
     tBody.innerHTML += 
    `
    <tr class="table_div_2">
-                              <td>${tableData.id}</td>
-                              <td class="td_img_p"><img src="./images/table icons/div.sc-aXZVg.png" alt="" id="T_img1" class="t_imges">
-                               <p>MutantApeYachtClub</p> </td>
-                              <td>4.31 <br> ETH</td>
-                              <td>-2.6%</td>
-                              <td>1,181 <br> ETH</td>
-                              <td>-12.3%</td>
-                              <td>19.5K</td>
-                              <td>11.6K</td>
-                           </tr>
+      <td>${tableData.id}</td>
+      <td class="td_img_p"><img src="${tableData.Image}" alt="" id="T_img1" class="t_imges">
+       <p>${tableData.collection}</p> </td>
+      <td>${tableData.floor_name} <br> ${tableData.floor_nameB}</td>
+      <td>${tableData.floor_change}</td>
+      <td>${tableData.Volume} <br> ${tableData.volumneB}</td>
+      <td>${tableData.volumne_change}</td>
+      <td>${tableData.items}</td>
+      <td>${tableData.Owners}</td>
+    </tr>
 
    `
 
