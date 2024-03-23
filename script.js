@@ -240,3 +240,45 @@ console.log("what",volChange);
 // }
 }
 
+
+
+
+// now working on section 3  cards part has start from here 
+
+const collections = [{
+    nftImg:"./images" ,
+    time : "05:12:07:45",
+    title : "Hamlet Contemplates ...",
+    coin:"BSC",
+    pImg : "./",
+    Creatior: "Creator",
+    CurrentBid: "Current Bid",
+    Name: "SalvadorDali",
+    price : 4.89,
+    curr : "ETH"
+},
+{
+    nftImg:"./images" ,
+    time : "05:12:07:45",
+    title : "Hamlet Contemplates ...",
+    coin:"BSC",
+    pImg : "./",
+    Creatior: "Creator",
+    CurrentBid: "Current Bid",
+    Name: "SalvadorDali",
+    price : 4.89,
+    curr : "ETH"
+},
+{
+    nftImg:"./image" ,
+    time : "05:12:07:45",
+    title : "Hamlet Contemplates ...",
+    coin:"BSC",
+    pImg : "./",
+    Creatior: "Creator",
+    CurrentBid: "Current Bid",
+    Name: "SalvadorDali",
+    price : 4.89,
+    curr : "ETH"
+}]
+

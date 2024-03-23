@@ -378,7 +378,7 @@ padding: 10px;
  }
 
 
- #tren-coll-h1 h1{ 
+ .main_headings_all{ 
     color: white;
     font-size: 3rem;
     padding: 2px;
@@ -588,4 +588,34 @@ width: 50px;
     color: white;
     font-weight: bolder;
     font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+
+
+/* now working on section 3 from here section 3 is started */
+
+#section3{
+    /* background-color: red; */
+ 
+    height: 100vh;
+}
+.S3_main_all{
+margin-top: 9rem; ;
+}
+
+.heading_S3_div{
+    display: flex;
+    justify-content: space-between;
+}
+.view_more{
+    border: 2px solid rgb(62, 81, 253);
+    background-color: transparent;
+    color: white;
+    padding: 1rem 2.2rem;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 0.9rem;
 }
