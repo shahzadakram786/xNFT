@@ -560,8 +560,32 @@ width: 50px;
 
 .positive{
     color: rgb(77, 184, 51);
+    font-size: 1.1rem;
 }
 
 .negative{
     color: rgb(233, 73, 73);
+    font-size: 1.1rem;
+
+}
+
+
+/* now working on view all collection button in section 2  */
+
+.view-all-coll-btn{
+    /* background-color: red; */
+    /* padding: 20px; */
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+.view-all-coll-btn button{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 15px;
+    border: none;
+    background: rgb(47, 37, 67);
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
 }
