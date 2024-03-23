@@ -619,3 +619,54 @@ margin-top: 9rem; ;
     font-weight: bolder;
     font-size: 0.9rem;
 }
+
+/* from here i am working on the main div of cards */
+
+.slider{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+    /* gap: 4rem; */
+}
+
+.cards{
+    border-radius: 30px;
+    width: 30%;
+    background-color:rgb(43, 33, 63);
+}
+
+.for_nft_img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+.cards .for_nft_img img{
+    width: 100%;
+    padding: 50px;
+    height: 100%;
+  
+}
+
+/* now working on the time div in sec 3 */
+
+.for_timer{
+    margin: 0 auto;
+    position: absolute;
+    top: 75%;
+    background-color: rgb(15, 24, 46);
+    padding: 0.7rem 3rem;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* margin: auto; */
+}
+
+.for_timer i {
+    font-size: 1.5em;
+}
