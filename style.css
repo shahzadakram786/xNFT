@@ -600,7 +600,7 @@ width: 50px;
 #section3{
     /* background-color: red; */
  
-    height: 100vh;
+    /* height: 100vh; */
 }
 .S3_main_all{
 margin-top: 9rem; ;
@@ -706,6 +706,7 @@ margin-top: 9rem; ;
     grid-template-columns: 90px 1fr 1fr ;
     width:85%;
     gap: 0.5rem;
+    margin-bottom:1rem ;
     /* gap: rem; */
 }
 
@@ -715,19 +716,18 @@ margin-top: 9rem; ;
 
 .for_p_img {
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     
 }
 
 .for_p_img img{
     width: 100%;
-    ;
 
     
 }
 
 
-.for_p_Creator_name {
+.content{
 
 display: flex;
 flex-direction: column;
@@ -739,11 +739,6 @@ color: white;
 
 
 .for_p_currency {
-    display: flex;
-flex-direction: column;
-gap: 1.1rem;    
-font-size: 1.4rem;
-justify-content: center;
-color: white;
+text-align: end;
 }
 
