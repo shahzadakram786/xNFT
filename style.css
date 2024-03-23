@@ -635,6 +635,10 @@ margin-top: 9rem; ;
     border-radius: 30px;
     width: 30%;
     background-color:rgb(43, 33, 63);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .for_nft_img {
@@ -670,3 +674,76 @@ margin-top: 9rem; ;
 .for_timer i {
     font-size: 1.5em;
 }
+/* now working on the title of s3 cards */
+
+.for_title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    width: 85%;
+    font-weight: bolder;
+    color: rgb(168, 164, 177);
+}
+.for_title h2{
+    color: white;
+    font-size:1.5rem ;
+    padding: 10px;
+}
+.for_title h3{
+    font-size: 1.4rem;
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+/* this is for profile in s3 cards */
+
+.for_profile{
+    margin-top:1rem ;
+    display: grid;
+    grid-template-columns: 90px 1fr 1fr ;
+    width:85%;
+    gap: 0.5rem;
+    /* gap: rem; */
+}
+
+.for_profile > div > p{
+    color: rgb(143, 156, 169);
+}
+
+.for_p_img {
+    width: 100%;
+    background-color: red;
+    
+}
+
+.for_p_img img{
+    width: 100%;
+    ;
+
+    
+}
+
+
+.for_p_Creator_name {
+
+display: flex;
+flex-direction: column;
+gap: 1.1rem;    
+font-size: 1.4rem;
+justify-content: center;
+color: white;
+}
+
+
+.for_p_currency {
+    display: flex;
+flex-direction: column;
+gap: 1.1rem;    
+font-size: 1.4rem;
+justify-content: center;
+color: white;
+}
+
