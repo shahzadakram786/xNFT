@@ -246,11 +246,11 @@ console.log("what",volChange);
 // now working on section 3  cards part has start from here 
 
 const collections = [{
-    nftImg:"./images" ,
+    nftImg:"./images/cards images/Image.png" ,
     time : "05:12:07:45",
     title : "Hamlet Contemplates ...",
     coin:"BSC",
-    pImg : "./",
+    pImg : "./images/cards images/Background.png",
     Creatior: "Creator",
     CurrentBid: "Current Bid",
     Name: "SalvadorDali",
@@ -258,11 +258,11 @@ const collections = [{
     curr : "ETH"
 },
 {
-    nftImg:"./images" ,
+    nftImg:"./images/cards images/IMG.png" ,
     time : "05:12:07:45",
     title : "Hamlet Contemplates ...",
     coin:"BSC",
-    pImg : "./",
+    pImg : "./images/cards images/Background (1).png",
     Creatior: "Creator",
     CurrentBid: "Current Bid",
     Name: "SalvadorDali",
@@ -270,11 +270,11 @@ const collections = [{
     curr : "ETH"
 },
 {
-    nftImg:"./image" ,
+    nftImg:"./images/cards images/IMG (1).png" ,
     time : "05:12:07:45",
     title : "Hamlet Contemplates ...",
     coin:"BSC",
-    pImg : "./",
+    pImg : "./images/cards images/Background (2).png",
     Creatior: "Creator",
     CurrentBid: "Current Bid",
     Name: "SalvadorDali",
@@ -282,3 +282,41 @@ const collections = [{
     curr : "ETH"
 }]
 
+
+
+
+
+let cards = document.querySelector(".cards");
+
+for(let i = 0 ; i < collections.length; i++) {
+    let collectionData = collections[i];
+
+    console.log("Working");
+
+    cards.innerHTML += 
+    `
+    <div class="for_nft_img"><img src="${collectionData.nftImg}" alt="">
+                    <div class="for_timer"><i class="fa-solid fa-fire" style="color: #f06f05;"></i><h2>${collectionData.time}</h2></div></div>
+               
+                <div class="for_title"><h2>"${collectionData.title}"</h2> <h3>BSC</h3></div>
+                <div class="for_profile">
+                    <div class="for_p_img"><img src="${collectionData.pImg}" alt=""></div>
+                    <div class="for_p_Creator_name content">
+                        <p>${collectionData.Creatior}</p>
+                        <h4>${collectionData.Name}</h4>
+                    </div>
+                    <div class="for_p_currency content">
+                        <p>${collectionData.CurrentBid}</p>
+                        <h4>${collectionData.price}<span>${collectionData.curr}</span></h4>
+                    </div>
+
+                </div>
+    `
+
+
+
+
+
+
+
+}
