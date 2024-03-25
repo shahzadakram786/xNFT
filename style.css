@@ -608,6 +608,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+position: relative;
 }
 
 .heading_S3_div{
@@ -631,7 +632,7 @@ align-items: center;
     overflow: hidden;
     width: 80%;
     height: 75vh;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
   /* padding-left: 1rem; */
@@ -650,6 +651,8 @@ align-items: center;
     justify-content: center;
     align-items: center;
     position: absolute;
+    margin-left: 1rem;
+  
   
 }
 
@@ -728,19 +731,14 @@ align-items: center;
 
 .for_p_img {
     width: 100%;
-    /* background-color: red; */
-    
 }
 
 .for_p_img img{
     width: 100%;
-
-    
 }
 
 
 .content{
-
 display: flex;
 flex-direction: column;
 gap: 1.1rem;    
@@ -755,26 +753,45 @@ text-align: end;
 }
 
 
-
 /* for the arrows buttons */
 
 .slider-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 0px;
+    z-index: 10;
   }
   
   .slider-buttons button {
-    background-color: #f2f2f2;
+    border-radius: 20px;
+    background-color: rgb(43, 34, 64);
+    height: 72vh;
+    font-size: 4rem;
     border: none;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+    position: absolute;
+    z-index: 10;
+    font-size: 3rem;
+    top: 17%;
+    padding: 0 1.5rem;
   }
-  
-  .slider-buttons button:hover {
-    background-color: #e0e0e0;
+
+  .slider-buttons button > i {
+    color: grey !important;
   }
+
+  #next-button{
+    right: 5%;
+  }
+  #prev-button{
+    left: 5%;
+  }
+
+  /* .slider-buttons button:hover {
+    color: #e0e0e0 !important
+  } */
   
   .slider-buttons button i {
     color: #000000;

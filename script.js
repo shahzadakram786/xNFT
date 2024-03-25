@@ -290,20 +290,31 @@ const collections = [{
     CurrentBid: "Current Bid",
     Name: "SalvadorDali",
     price : 4.89,
+    curr : "ETH",
+     curr : "ETH"
+},{
+    nftImg:"./images/cards images/IMG (1).png" ,
+    time : "05:12:07:45",
+    title : "Hamlet Contemplates ...",
+    coin:"BSC",
+    pImg : "./images/cards images/Background (2).png",
+    Creatior: "Creator",
+    CurrentBid: "Current Bid",
+    Name: "SalvadorDali",
+    price : 4.89,
     curr : "ETH"
-// },
-// {
-//     nftImg:"./images/cards images/IMG.png" ,
-//     time : "05:12:07:45",
-//     title : "Hamlet Contemplates ...",
-//     coin:"BSC",
-//     pImg : "./images/cards images/Background (1).png",
-//     Creatior: "Creator",
-//     CurrentBid: "Current Bid",
-//     Name: "SalvadorDali",
-//     price : 4.89,
-//     curr : "ETH"
-}]
+    },{
+        nftImg:"./images/cards images/Image.png" ,
+        time : "05:12:07:45",
+        title : "Hamlet Contemplates ...",
+        coin:"BSC",
+        pImg : "./images/cards images/Background.png",
+        Creatior: "Creator",
+        CurrentBid: "Current Bid",
+        Name: "SalvadorDali",
+        price : 4.89,
+        curr : "ETH"
+    }]
 
 
 
@@ -373,7 +384,7 @@ slides.forEach(
     }
     
     let back = () => {
-        if (count == 0) {
+        if (count == 2) {
             count = 4;
         }
         count--;
