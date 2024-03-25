@@ -280,13 +280,36 @@ const collections = [{
     Name: "SalvadorDali",
     price : 4.89,
     curr : "ETH"
+},{
+    nftImg:"./images/cards images/Image.png" ,
+    time : "05:12:07:45",
+    title : "Hamlet Contemplates ...",
+    coin:"BSC",
+    pImg : "./images/cards images/Background.png",
+    Creatior: "Creator",
+    CurrentBid: "Current Bid",
+    Name: "SalvadorDali",
+    price : 4.89,
+    curr : "ETH"
+// },
+// {
+//     nftImg:"./images/cards images/IMG.png" ,
+//     time : "05:12:07:45",
+//     title : "Hamlet Contemplates ...",
+//     coin:"BSC",
+//     pImg : "./images/cards images/Background (1).png",
+//     Creatior: "Creator",
+//     CurrentBid: "Current Bid",
+//     Name: "SalvadorDali",
+//     price : 4.89,
+//     curr : "ETH"
 }]
 
 
 
 
 
-let cards = document.querySelector(".cards");
+let cards = document.querySelector(".slider");
 
 for(let i = 0 ; i < collections.length; i++) {
     let collectionData = collections[i];
@@ -295,6 +318,9 @@ for(let i = 0 ; i < collections.length; i++) {
 
     cards.innerHTML += 
     `
+    <div class="cards">
+                
+            
     <div class="for_nft_img"><img src="${collectionData.nftImg}" alt="">
                     <div class="for_timer"><i class="fa-solid fa-fire" style="color: #f06f05;"></i><h2>${collectionData.time}</h2></div></div>
                
@@ -311,12 +337,55 @@ for(let i = 0 ; i < collections.length; i++) {
                     </div>
 
                 </div>
+
+                </div>
     `
 
-
+    
 
 
 
 
 
 }
+// Select the buttons
+
+let slides = document.querySelectorAll(".cards")
+
+var count = 0;
+slides.forEach(
+    (slide, index) => {
+        slide.style.left = `${index * 33}%`
+
+    })
+
+
+
+
+    let next = () => {
+        if (count == 3) {
+            count = -1;
+        }
+        count++;
+        slideImage()
+    
+    
+    }
+    
+    let back = () => {
+        if (count == 0) {
+            count = 4;
+        }
+        count--;
+        slideImage()
+    
+    }
+
+    const slideImage = () => {
+
+        slides.forEach(
+            (slide) => {
+                slide.style.transform = `translateX(-${count * 100}%)`;
+            })
+    
+    }

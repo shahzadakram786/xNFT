@@ -604,6 +604,10 @@ width: 50px;
 }
 .S3_main_all{
 margin-top: 9rem; ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .heading_S3_div{
@@ -624,24 +628,29 @@ margin-top: 9rem; ;
 /* from here i am working on the main div of cards */
 
 .slider{
-    /* overflow: hidden; */
-    width: 100%;
-    /* background-color: red; */
+    overflow: hidden;
+    width: 80%;
+    height: 75vh;
+    background-color: red;
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    flex-direction: column;
+  /* padding-left: 1rem; */
+    align-items: center;
+  
     margin-top: 5rem;
-    /* gap: 4rem; */
+    position: relative;
 }
 
 .cards{
     border-radius: 30px;
-    width: 30%;
+    width: 32%;
     background-color:rgb(43, 33, 63);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+  
 }
 
 .for_nft_img {
@@ -745,3 +754,28 @@ color: white;
 text-align: end;
 }
 
+
+
+/* for the arrows buttons */
+
+.slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+  }
+  
+  .slider-buttons button {
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .slider-buttons button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .slider-buttons button i {
+    color: #000000;
+  }
