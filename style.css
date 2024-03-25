@@ -602,7 +602,7 @@ width: 50px;
  
     /* height: 100vh; */
 }
-.S3_main_all{
+.S_main_all{
 margin-top: 9rem; ;
 display: flex;
 flex-direction: column;
@@ -611,7 +611,7 @@ align-items: center;
 position: relative;
 }
 
-.heading_S3_div{
+.heading_S_div{
     display: flex;
     justify-content: space-between;
 }
@@ -640,6 +640,7 @@ position: relative;
   
     margin-top: 5rem;
     position: relative;
+    /* padding: 2rem; */
 }
 
 .cards{
@@ -652,8 +653,22 @@ position: relative;
     align-items: center;
     position: absolute;
     margin-left: 1rem;
+    margin-right: 1rem;
+   
+    transition: transform 0.1s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
   
-  
+}
+
+.cards:hover {
+    perspective-origin: 800px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+
+        transform: translateZ(12px);
+    
+      
 }
 
 .for_nft_img {
@@ -782,10 +797,10 @@ text-align: end;
     color: grey !important;
   }
 
-  #next-button{
+  .next-button{
     right: 5%;
   }
-  #prev-button{
+  .prev-button{
     left: 5%;
   }
 

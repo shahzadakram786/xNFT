@@ -318,7 +318,7 @@ const collections = [{
 
 
 
-
+function firstFunction(){
 
 let cards = document.querySelector(".slider");
 
@@ -352,13 +352,12 @@ for(let i = 0 ; i < collections.length; i++) {
                 </div>
     `
 
-    
-
-
-
-
 
 }
+
+}
+firstFunction()
+
 // Select the buttons
 
 let slides = document.querySelectorAll(".cards")
@@ -400,3 +399,10 @@ slides.forEach(
             })
     
     }
+
+
+
+
+
+
+
