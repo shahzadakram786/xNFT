@@ -403,6 +403,7 @@ slides.forEach(
 
 
 
+let cards2 = document.querySelector(".slider_2")
 
-
-
+cards2.innerHTML += firstFunction()
+// i want to add the first function just nft img should be changed
