@@ -457,6 +457,19 @@ const slideImage = () => {
 // firstSlides(slides)
 
 
+let butnSlide1 = document.querySelector('#butn_slide_1');
+let slider = document.querySelector(".slider")
+butnSlide1.addEventListener('click',() => {
+
+
+slider.style.heigth = 'auto';
+slider.style.display = 'grid';
+slider.style.gridTemplateColumn = "repeat(3,1fr)"
+console.log("bitton is working");
+
+});
+
+
 
 
 
