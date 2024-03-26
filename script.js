@@ -423,41 +423,38 @@ firstFunction(collections, cards);
 
 // Select the buttons
 
-function firstSlides(slides) {
-  var count = 0;
-
-  slides.forEach((slide, index) => {
-    slide.style.left = `${index * 33}%`;
-  });
-
-  // Define next and back functions outside firstSlides for global access
-  function next() {
-    if (count == 3) {
-      count = 0; // Reset to first slide (alternative: -1 for smooth transition)
-    }
-    count++;
-    slideImage();
-  }
-
-  function back() {
-    if (count == 0) {
-      count = slides.length - 1; // Reset to last slide
-    }
-    count--;
-    slideImage();
-  }
-
-  const slideImage = () => {
-    slides.forEach((slide) => {
-      slide.style.transform = `translateX(-${count * 100}%)`;
-    });
-  };
-}
-
+// function firstSlides(cards){
 let slides = document.querySelectorAll(".cards");
-firstSlides(slides);
 
-  
+
+var count = 0;
+slides.forEach((slide, index) => {
+  slide.style.left = `${index * 33}%`;
+});
+
+let next = () => {
+  if (count == 3) {
+    count = -1;
+  }
+  count++;
+  slideImage();
+};
+
+let back = () => {
+  if (count == 2) {
+    count = 4;
+  }
+  count--;
+  slideImage();
+};
+
+const slideImage = () => {
+  slides.forEach((slide) => {
+    slide.style.transform = `translateX(-${count * 100}%)`;
+  });
+};
+// //   }
+// firstSlides(slides)
 
 
 
@@ -465,5 +462,37 @@ firstSlides(slides);
 
 let cards2 = document.querySelector(".slider_2");
 firstFunction(collections_2, cards2);
-let slides2 = document.querySelectorAll(".cards2");
-firstSlides(slides2)
+
+
+
+let slides2 = document.querySelectorAll(".slider_2 .cards");
+
+var count2 = 0;
+slides2.forEach((slide, index) => {
+  slide.style.left = `${index * 33}%`;
+});
+
+let next2 = () => {
+  if (count2 == 3) {
+    count2 = -1;
+  }
+  count2++;
+  slideImage2();
+};
+
+let back2 = () => {
+  if (count2 == 2) {
+    count2 = 4;
+  }
+  count2--;
+  slideImage2();
+};
+
+const slideImage2 = () => {
+  slides2.forEach((slide) => {
+    slide.style.transform = `translateX(-${count2 * 100}%)`;
+  });
+};
+
+// let cards2 = document.querySelector(".slider_2");
+// firstFunction(collections_2, cards2);

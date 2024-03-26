@@ -643,7 +643,7 @@ position: relative;
     /* padding: 2rem; */
 }
 
-.cards , .cards2{
+.cards{
     border-radius: 30px;
     width: 32%;
     background-color:rgb(43, 33, 63);
@@ -653,20 +653,17 @@ position: relative;
     align-items: center;
     position: absolute;
     margin-left: 1rem;
-    margin-right: 1rem;
-   
+    margin-right: 1rem;  
     transition: transform 0.1s ease;
     transform-style: preserve-3d;
     will-change: transform;
-  
 }
 
 .cards:hover {
     perspective-origin: 800px;
     transition: 0.4s ease-in-out;
     cursor: pointer;
-
-        transform: translateZ(12px);
+    transform: translateZ(12px);
     
       
 }
