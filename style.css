@@ -643,7 +643,7 @@ position: relative;
     /* padding: 2rem; */
 }
 
-.cards{
+.cards , .cards2{
     border-radius: 30px;
     width: 32%;
     background-color:rgb(43, 33, 63);
