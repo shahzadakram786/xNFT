@@ -386,6 +386,86 @@ const collections_2 = [
   },
 ];
 
+
+
+const collections_3 = [
+  {
+    nftImg: "./images/cards images/ImageS3.png",
+    time: "05:12:07:45",
+    title: "Hamlet Contemplates ...",
+    coin: "BSC",
+    pImg: "./images/cards images/Background.png",
+    Creatior: "Creator",
+    CurrentBid: "Current Bid",
+    Name: "SalvadorDali",
+    price: 4.89,
+    curr: "ETH",
+  },
+  {
+    nftImg: "./images/cards images/IMGS3.png",
+    time: "05:12:07:45",
+    title: "Hamlet Contemplates ...",
+    coin: "BSC",
+    pImg: "./images/cards images/Background (1).png",
+    Creatior: "Creator",
+    CurrentBid: "Current Bid",
+    Name: "SalvadorDali",
+    price: 4.89,
+    curr: "ETH",
+  },
+  {
+    nftImg: "./images/cards images/IMG S3.png",
+    time: "05:12:07:45",
+    title: "Hamlet Contemplates ...",
+    coin: "BSC",
+    pImg: "./images/cards images/Background (2).png",
+    Creatior: "Creator",
+    CurrentBid: "Current Bid",
+    Name: "SalvadorDali",
+    price: 4.89,
+    curr: "ETH",
+  },
+  {
+    nftImg: "./images/cards images/IMGS3.png",
+    time: "05:12:07:45",
+    title: "Hamlet Contemplates ...",
+    coin: "BSC",
+    pImg: "./images/cards images/Background.png",
+    Creatior: "Creator",
+    CurrentBid: "Current Bid",
+    Name: "SalvadorDali",
+    price: 4.89,
+    curr: "ETH",
+    curr: "ETH",
+  },
+  {
+    nftImg: "./images/cards images/IMG S3.png",
+    time: "05:12:07:45",
+    title: "Hamlet Contemplates ...",
+    coin: "BSC",
+    pImg: "./images/cards images/Background (2).png",
+    Creatior: "Creator",
+    CurrentBid: "Current Bid",
+    Name: "SalvadorDali",
+    price: 4.89,
+    curr: "ETH",
+  },
+  {
+    nftImg: "./images/cards images/ImageS3.png",
+    time: "05:12:07:45",
+    title: "Hamlet Contemplates ...",
+    coin: "BSC",
+    pImg: "./images/cards images/Background.png",
+    Creatior: "Creator",
+    CurrentBid: "Current Bid",
+    Name: "SalvadorDali",
+    price: 4.89,
+    curr: "ETH",
+  },
+];
+
+
+
 function firstFunction(cardData, cards) {
   for (let i = 0; i < cardData.length; i++) {
     let collectionData = cardData[i];
@@ -417,8 +497,9 @@ function firstFunction(cardData, cards) {
     `;
   }
 }
-let cards = document.querySelector(".slider_1");
 
+
+let cards = document.querySelector(".slider_1");
 firstFunction(collections, cards);
 
 // Select the buttons
@@ -509,3 +590,40 @@ const slideImage2 = () => {
 
 // let cards2 = document.querySelector(".slider_2");
 // firstFunction(collections_2, cards2);
+
+
+// now i am working on silder 3 of section 5
+
+
+let cards3 = document.querySelector(".slider_3");
+firstFunction(collections_3, cards3);
+
+
+let slides3 = document.querySelectorAll(".slider_3 .cards");
+
+var count3 = 0;
+slides3.forEach((slide, index) => {
+  slide.style.left = `${index * 33}%`;
+});
+
+let next3 = () => {
+  if (count3 == 3) {
+    count3 = -1;
+  }
+  count3++;
+  slideImage3();
+};
+
+let back3 = () => {
+  if (count3 == 2) {
+    count3 = 4;
+  }
+  count3--;
+  slideImage3();
+};
+
+const slideImage3 = () => {
+  slides3.forEach((slide) => {
+    slide.style.transform = `translateX(-${count3 * 100}%)`;
+  });
+};
