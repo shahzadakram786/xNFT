@@ -1,0 +1,133 @@
+/* i designed this css file for responsive for the file  */
+
+
+@media screen and (min-width: 1300px){
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+/* max width id below 1000 */
+
+@media screen and (max-width: 1650px){
+
+
+    /* section 1   */
+
+  ul{
+    font-size: 1rem;
+    transition: all 0.4s ease-in-out;
+  }
+ #btn1{
+    font-size: 0.8rem;
+    padding: 0.8rem 1.1rem;
+ }
+
+ #line-below-nft {
+  
+    top: 3.5rem;
+    left: 0;
+    width: 100%;
+}
+
+
+    .TxtA h1{
+        color: white;
+        font-size: 3.4rem;
+        letter-spacing: 2px;
+        margin-top: 2rem;
+        text-wrap: wrap;
+        transition: all 0.5s ease-in-out;
+        
+         }
+
+
+         .TxtA p{
+            margin: 2rem 0;
+       font-size: 1.4rem;
+       text-wrap: wrap;
+
+         }
+
+
+         .Imge img{
+            height: 150vh;
+            object-fit: cover;
+            position: absolute;
+            top: -12px;
+            right: 0;
+            transition: all 0.4s ;
+     }
+
+
+     .for-num span h2 {
+        font-size: 2.5rem;
+    }
+
+    .for-num span p {
+        font-size: 1rem;
+    }
+
+    .line {
+        height: 2.6em;
+    }
+
+
+
+    .spanNum-btn {
+        height: 1em;
+    }
+     /* section 1  */
+}
+
+
+
+/* max width will be 700  */
+@media screen and (max-width: 1024px){
+    ul{
+        gap: 1rem;
+    }
+
+    .TxtA h1{
+        font-size: 2.7rem;
+    }
+
+    .TxtA p{
+        font-size: 1rem;
+    }
+
+    .Imge img{
+        height: 70vh;
+        object-fit: cover;
+        position: absolute;
+        top: 62px;
+        right: 0;
+        transition: all 0.4s ;
+ }
+
+ .for-btns button {
+    padding: 1.2rem 3rem;
+    font-size: 1.2rem;
+  
+  
+}
+
+}
+
+
+
+/*  max width will be 400 */
+@media screen and (max-width: 1300){
+    
+}

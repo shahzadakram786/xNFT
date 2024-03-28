@@ -59,7 +59,8 @@ z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:5rem;
+    flex-wrap: wrap;
+    gap:3rem;
     padding: 1rem;
     font-size: 1.5rem;
     
@@ -808,3 +809,10 @@ text-align: end;
   .slider-buttons button i {
     color: #000000;
   }
+
+  /* this is for the section 6 */
+
+ #section6{
+
+    height: 90vh;
+ }
