@@ -386,8 +386,6 @@ const collections_2 = [
   },
 ];
 
-
-
 const collections_3 = [
   {
     nftImg: "./images/cards images/ImageS3.png",
@@ -464,8 +462,6 @@ const collections_3 = [
   },
 ];
 
-
-
 function firstFunction(cardData, cards) {
   for (let i = 0; i < cardData.length; i++) {
     let collectionData = cardData[i];
@@ -476,10 +472,16 @@ function firstFunction(cardData, cards) {
     <div class="cards">
                 
             
-    <div class="for_nft_img"><img src="${collectionData.nftImg}" alt="">
-                    <div class="for_timer"><i class="fa-solid fa-fire" style="color: #f06f05;"></i><h2>${collectionData.time}</h2></div></div>
+                 <div class="for_nft_img"><img src="${collectionData.nftImg}" alt="">
+                       <div class="for_timer">
+                       <i class="fa-solid fa-fire" style="color: #f06f05;"></i><h2>${collectionData.time}</h2>
+                       </div>
+                 </div>
                
-                <div class="for_title"><h2>"${collectionData.title}"</h2> <h3>BSC</h3></div>
+                <div class="for_title">
+                <h2>"${collectionData.title}"</h2> <h3>BSC</h3>
+                </div>
+
                 <div class="for_profile">
                     <div class="for_p_img"><img src="${collectionData.pImg}" alt=""></div>
                     <div class="for_p_Creator_name content">
@@ -493,11 +495,10 @@ function firstFunction(cardData, cards) {
 
                 </div>
 
-                </div>
+    </div>
     `;
   }
 }
-
 
 let cards = document.querySelector(".slider_1");
 firstFunction(collections, cards);
@@ -506,7 +507,6 @@ firstFunction(collections, cards);
 
 // function firstSlides(cards){
 let slides = document.querySelectorAll(".cards");
-
 
 var count = 0;
 slides.forEach((slide, index) => {
@@ -537,27 +537,17 @@ const slideImage = () => {
 // //   }
 // firstSlides(slides)
 
-
-let butnSlide1 = document.querySelector('#butn_slide_1');
-let slider = document.querySelector(".slider")
-butnSlide1.addEventListener('click',() => {
-
-
-slider.style.heigth = 'auto';
-slider.style.display = 'grid';
-slider.style.gridTemplateColumn = "repeat(3,1fr)"
-console.log("bitton is working");
-
+let butnSlide1 = document.querySelector("#butn_slide_1");
+let slider = document.querySelector(".slider");
+butnSlide1.addEventListener("click", () => {
+  slider.style.heigth = "auto";
+  slider.style.display = "grid";
+  slider.style.gridTemplateColumn = "repeat(3,1fr)";
+  console.log("bitton is working");
 });
-
-
-
-
 
 let cards2 = document.querySelector(".slider_2");
 firstFunction(collections_2, cards2);
-
-
 
 let slides2 = document.querySelectorAll(".slider_2 .cards");
 
@@ -591,13 +581,10 @@ const slideImage2 = () => {
 // let cards2 = document.querySelector(".slider_2");
 // firstFunction(collections_2, cards2);
 
-
 // now i am working on silder 3 of section 5
-
 
 let cards3 = document.querySelector(".slider_3");
 firstFunction(collections_3, cards3);
-
 
 let slides3 = document.querySelectorAll(".slider_3 .cards");
 

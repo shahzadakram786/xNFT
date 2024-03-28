@@ -710,6 +710,7 @@ position: relative;
     font-size: 1rem;
     width: 85%;
     font-weight: bolder;
+    flex-wrap: wrap;
     color: rgb(168, 164, 177);
 }
 .for_title h2{
