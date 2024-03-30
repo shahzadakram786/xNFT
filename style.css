@@ -629,16 +629,16 @@ position: relative;
 
 /* from here i am working on the main div of cards */
 
-.slider{
+.slider{ 
+    /* background-color: red; */
     overflow: hidden;
     width: 80%;
     height: 75vh;
-    /* background-color: red; */
+   
     display: flex;
     flex-direction: column;
   /* padding-left: 1rem; */
     align-items: center;
-  
     margin-top: 5rem;
     position: relative;
     /* padding: 2rem; */
