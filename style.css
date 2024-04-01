@@ -816,4 +816,47 @@ text-align: end;
  #section6{
 
     height: 90vh;
+    color: white;
  }
+
+/* this is the heading of section 6 create ai */
+ .sec6_heading{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: left;
+    margin-top: 4rem;
+
+ }
+/* this is for the parent div of para and img */
+.sec6_2nd{
+    display: flex;
+}
+
+
+/* this css is  for the paragraph under h1  */
+
+.sec6_Para{
+    width: 70%;
+    /* background-color: red; */
+    font-size: 2rem;
+    /* font-weight: bolder; */
+    line-height: 1.8;
+    text-align: left;
+    margin: 6rem 0;
+    padding: 1rem 0; 
+}
+
+/* this is for the image beside the paragraph */
+
+.sec6_img{
+    width: 30%;
+    height: fit-content;
+    margin: 6rem 0;
+}
+
+.sec6_img img{
+    width: 100%;
+    /* height: fit-content; */
+    /* background-color: yellow; */
+    object-fit: contain;
+}
