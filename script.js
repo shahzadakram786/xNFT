@@ -1,3 +1,21 @@
+
+// making the navigation bar 
+const siderbar = document.querySelector(".siderbar")
+
+function showSidebar(){
+   siderbar.style.display = "flex";
+
+}
+
+
+function hideSidebar(){
+  siderbar.style.display = "none"
+
+}
+
+
+
+
 let num = document.querySelector("#First_num");
 
 const first_numbers = [

@@ -107,9 +107,26 @@ nav li:first-child{
     height: 100vh;
     width: 250px;
     z-index: 99;
-    background-color: rgba(74, 62, 62, 0.72)
+    background-color:rgba(255, 255, 255, 0.023);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    justify-content: flex-start;
+
 }
 
+.siderbar li {
+    width: 100%;
+}
+.siderbar a {
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
 
 
 
@@ -960,12 +977,14 @@ nav li:first-child{
 .s6_card {
     text-align: center;
     padding: 2rem;
-    border-image: linear-gradient(to bottom, #13082A 30%, white);
+    border-image: linear-gradient(to bottom, rgb(42, 32, 63)30%, rgba(255, 255, 255, 0.424));
     background: rgb(42, 32, 63);
     border-image-slice: 1;
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
-    border-radius: 15px; /* Placed after the border properties */
+    border-radius: 15px; 
+    overflow: hidden;
+
 }
 
 

@@ -164,6 +164,19 @@
 
 
 /*  max width will be 400 */
-@media screen and (max-width: 1300){
-    
+@media screen and (max-width: 800px){
+    .hideOnMob{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width: 400px){
+    .siderbar{
+        width: 100%;
+    }
 }
