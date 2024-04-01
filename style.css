@@ -1,37 +1,39 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-html, body {
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
 /* header part  */
 
-header{
-background:rgb(26, 18, 51);
-z-index: 2;
-/* flex-direction: column; */
+header {
+    background: rgb(26, 18, 51);
+    z-index: 2;
+    /* flex-direction: column; */
 }
 
-.main-header{
+.main-header {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     /* background-color: red; */
     width: 90%;
 }
 
-.insider-header{
+.insider-header {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -40,109 +42,118 @@ z-index: 2;
 
 
 }
-#M-logo{
-/* background-color: yellow; */
-padding: 10px;
-z-index: 2;
+
+#M-logo {
+    /* background-color: yellow; */
+    padding: 10px;
+    z-index: 2;
 }
-#M-navs{
-      
+
+#M-navs {
+
     /* background: green; */
     padding-right: 3rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
+
 }
 
- ul {
+ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap:3rem;
+    gap: 3rem;
     padding: 1rem;
     font-size: 1.5rem;
-    
+
     /* flex-direction: row; */
 
 }
-ul li{ 
+
+ul li {
     text-decoration: none;
     list-style: none;
     display: flex;
-   
 
-    
+
+
 
 }
- ul li a{
+
+ul li a {
     text-decoration: none;
     color: white;
     cursor: pointer;
 
 
- }
+}
 
- #btn1{
+#btn1 {
     padding: 1rem 1.5rem;
     border: none;
-    border-radius: 20px ;
+    border-radius: 20px;
     background: rgb(119, 121, 240);
     color: white;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
- }
+}
 
 /* section working on stars */
-.stars{
+.stars {
     position: absolute;
 }
-.first-stars{
+
+.first-stars {
     height: 20px;
-    width: 20px; 
-   
+    width: 20px;
+
 }
-#star1{
+
+#star1 {
     top: 3rem;
     left: 14rem;
     filter: blur(3px);
 }
 
-#star2{
- 
+#star2 {
+
     top: 3rem;
     left: 60rem;
     filter: blur(3px);
-  
+
 }
-#star3{
+
+#star3 {
     top: 5rem;
     right: 9.5rem;
     filter: blur(2px);
 
 }
 
-.clear-stars{
+.clear-stars {
     filter: blur(0px);
 }
-#star4{
-    height:18px ;
+
+#star4 {
+    height: 18px;
     width: 18px;
     top: 13.5rem;
     left: 6.5rem;
-    
+
 }
-#star5{
+
+#star5 {
     height: 10px;
     width: 10px;
     top: 15.5rem;
     left: 4.5rem;
-   
+
 }
 
-#star6{
+#star6 {
     height: 20px;
     width: 20px;
     top: 41rem;
@@ -151,67 +162,69 @@ ul li{
 
 
 
-#star7{
+#star7 {
     height: 20px;
     width: 20px;
     top: 51rem;
     left: 5.5rem;
 }
 
-#star8{
+#star8 {
     height: 20px;
     width: 20px;
     top: 57rem;
     right: 31rem;
 }
-#star9{
+
+#star9 {
     height: 15px;
     width: 15px;
     top: 46rem;
     right: 41.5rem;
 }
- /* section 1  */
 
- .section{
+/* section 1  */
+
+.section {
     background-image: url(./images/lines.png);
-    background-color:  #13082A ;
+    background-color: #13082A;
     height: auto;
     padding: 1rem;
     /* position: relative; */
 
 
- }
+}
 
 /* blur div */
 
- .blur{
-    background:#376F99;
+.blur {
+    background: #376F99;
     width: 20%;
     height: 30vh;
     filter: blur(120px);
     border-radius: 50%;
- }
+}
 
 
- #blur1{
+#blur1 {
     position: absolute;
     left: -10rem;
     top: 0;
     /* z-index: 1 ; */
- }
+}
 
 
- .con1{
-   
+.con1 {
+
     width: 90%;
     /* background-color: #2C2A84; */
-    margin-left:  auto;
+    margin-left: auto;
     margin-right: auto;
 
 }
 
- /* first dic */
-.FrstDiv{
+/* first dic */
+.FrstDiv {
     margin-top: 2rem;
     width: 100%;
     z-index: 1;
@@ -220,10 +233,11 @@ ul li{
     justify-content: center;
     /* align-items: center; */
     /* background-color: yellow; */
-    
+
 }
- /* text area top heading */
- .TxtA{
+
+/* text area top heading */
+.TxtA {
     z-index: 1;
     /* background-color: red; */
     width: 50%;
@@ -231,107 +245,111 @@ ul li{
     flex-direction: column;
     padding: 10px;
     /* text-align: center; */
- }
+}
 
 
- .TxtA h1{
-color: white;
-font-size: 5.4rem;
-letter-spacing: 5px;
-text-transform: capitalize;
-/* padding-left: 2rem; */
-margin-top: 2rem;
+.TxtA h1 {
+    color: white;
+    font-size: 5.4rem;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    /* padding-left: 2rem; */
+    margin-top: 2rem;
 
- }
- 
-#nft{
-    color:rgb(165, 166, 246) ;
+}
+
+#nft {
+    color: rgb(165, 166, 246);
     position: relative;
 }
-#line-below-nft{
-    position: absolute;
-     top: 5.5rem;
-    left: 100%;
- }
 
- .TxtA p {
-    color:#AB8FC1;
+#line-below-nft {
+    position: absolute;
+    top: 5.5rem;
+    left: 100%;
+}
+
+.TxtA p {
+    color: #AB8FC1;
     margin-top: 4rem;
     font-size: 2rem;
     word-spacing: 5px;
     padding-right: 1em;
     margin-bottom: 4rem;
     /* letter-spacing: 2px; */
- }
+}
 
 
 
- /* from this point ill work on image part main  */
+/* from this point ill work on image part main  */
 
- 
- .Imge{
+
+.Imge {
     width: 50%;
     /* position: relative; */
     /* background-color: #6d2ef6; */
- }
- .Imge img{
-        height: 170vh;
-        object-fit: cover;
-        position: absolute;
-        top: -12px;
-        right: 0;
- }
- #blur2{
+}
+
+.Imge img {
+    height: 170vh;
+    object-fit: cover;
+    position: absolute;
+    top: -12px;
+    right: 0;
+}
+
+#blur2 {
     position: absolute;
     right: 0;
     top: 69rem;
     right: 0;
     filter: blur(298px);
     z-index: 1;
- }
+}
 
- /* this is for the buttons and the numbers part  */
-.Num-and-btns{
+/* this is for the buttons and the numbers part  */
+.Num-and-btns {
     /* background-color: yellow; */
     display: flex;
     flex-direction: column;
 }
 
-#First_num{
+#First_num {
     display: flex;
 }
 
- .for-num{
-    
-/* background-color: red; */
-display: flex;
-gap: 2rem;
-padding: 10px;
- }
+.for-num {
 
- .for-num span h2 {
-  font-size: 3.5rem;  
-  color:rgb(165, 166, 246) ;
- 
- }
- .for-num span p {
-  margin-top: -4px;
-  font-size: 1.3rem;
-    color:white ;
+    /* background-color: red; */
+    display: flex;
+    gap: 2rem;
+    padding: 10px;
+}
+
+.for-num span h2 {
+    font-size: 3.5rem;
+    color: rgb(165, 166, 246);
+
+}
+
+.for-num span p {
+    margin-top: -4px;
+    font-size: 1.3rem;
+    color: white;
     text-align: center;
-   }
+}
 
 
-  
- .line{
+
+.line {
     width: 2px;
     height: 4em;
-    margin-top: 1em ;
+    margin-top: 1em;
     background-color: rgb(165, 166, 246);
-    
- }
 
- .spanNum-btn{
+}
+
+.spanNum-btn {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -340,97 +358,105 @@ padding: 10px;
     height: 6em;
     margin-bottom: 4rem;
 
- }
+}
 
- /* working on buttons of section 1 */
- .for-btns {
+/* working on buttons of section 1 */
+.for-btns {
     display: flex;
     gap: 2rem;
 
- }
- .for-btns button {
+}
+
+.for-btns button {
     padding: 1.2rem 4rem;
     font-size: 1.5rem;
     border-radius: 40px;
     color: white;
     background-color: rgb(120, 121, 241);
-    border: 2px solid rgb(120, 121, 241) ;
+    border: 2px solid rgb(120, 121, 241);
     cursor: pointer;
-    
- }
- #crate-btn{
+
+}
+
+#crate-btn {
     background: none;
- }
+}
 
 
 
- /* now working on section 2 */
+/* now working on section 2 */
 
 
- #section2{
+#section2 {
     /* height: 90vh ; */
     width: 100%;
     display: flex;
- }
+}
 
- .S2_main_all{
+.S2_main_all {
     /* border: 2px solid white; */
     margin-top: 9rem;
- }
+}
 
 
- .main_headings_all{ 
+.main_headings_all {
     color: white;
     font-size: 3rem;
     padding: 2px;
     /* padding: 2rem; */
- }
- 
+}
 
-.S2_main1{
+
+.S2_main1 {
     margin-top: 4rem;
     background: rgb(38, 28, 58);
     border: 2px solid rgb(123, 117, 135);
     border-radius: 20px;
     padding-bottom: 1rem;
 }
-.headings_S2_main{
+
+.headings_S2_main {
     display: flex;
     padding: 0.6rem 0 0.5rem 2rem;
     margin-top: 1rem;
     color: white;
 }
-.headings_S2_main h1{
+
+.headings_S2_main h1 {
     font-size: 2rem;
     padding: 2px;
     /* padding: 2rem; */
 }
-.headings_S2_main h3{
-   margin-left: 15px;
+
+.headings_S2_main h3 {
+    margin-left: 15px;
     padding: 2px;
     font-weight: 300;
     text-align: center;
     padding-top: 0.7rem;
     /* padding: 2rem; */
 }
-#s3_under_collections{
+
+#s3_under_collections {
     width: 6%;
-    border-radius: 10px 10px 0 0 ;
-    border: 2px solid rgb(165, 166, 246) ;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid rgb(165, 166, 246);
     margin-left: 11.7rem;
     margin-top: auto;
     /* margin-bottom: -1rem; */
 
 }
-#s2_line{
+
+#s2_line {
     width: 96%;
-    border: 1px solid rgb(165, 166, 246) ;
-   margin-top: -4rem;
+    border: 1px solid rgb(165, 166, 246);
+    margin-top: -4rem;
     /* background-color: rgb(165, 166, 246); */
     margin: auto;
 }
+
 /* inside s2 maini */
-.S2_boxes{
+.S2_boxes {
     /* background-color: red; */
     width: 96%;
     padding: 1rem 0;
@@ -438,13 +464,17 @@ padding: 10px;
     margin: 1rem auto;
     gap: 2rem;
 }
-.S2_box1 > button{
+
+.S2_box1>button {
     font-size: 1rem;
 }
-.S2_box2> button img{
-height: 1.5rem;
+
+.S2_box2>button img {
+    height: 1.5rem;
 }
-.S2_box1 , .S2_box2{
+
+.S2_box1,
+.S2_box2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -454,7 +484,9 @@ height: 1.5rem;
     border-radius: 20px;
     /* height: fit-content; */
 }
-.S2_box1 > button,.S2_box2 > button{
+
+.S2_box1>button,
+.S2_box2>button {
     padding: 1rem 1.5rem;
     height: auto;
     border-radius: 20px;
@@ -463,23 +495,26 @@ height: 1.5rem;
     border: none;
     cursor: pointer;
 }
-#S2_buttons> button{
-    padding: 0.7rem 1.5rem;   
+
+#S2_buttons>button {
+    padding: 0.7rem 1.5rem;
 }
-.S2_box1 > button:hover ,.S2_box2 > button:hover{
+
+.S2_box1>button:hover,
+.S2_box2>button:hover {
     background-color: rgb(152, 133, 191);
 }
 
 
 /* main s2 table part */
 
-.S2_inside_main{
+.S2_inside_main {
     /* background-color:purple; */
     padding: 10px;
     /* height: 100%; */
 }
 
-.tablePart{
+.tablePart {
     /* background-color: rgb(11, 20, 175); */
     width: 96%;
     margin: auto;
@@ -518,32 +553,34 @@ height: 1.5rem;
 /* now i am trybing with through table tags */
 
 
-.table_div_1{
+.table_div_1 {
     color: rgb(168, 164, 177);
 }
-.table_div_2{
+
+.table_div_2 {
     color: white;
     /* background-color: red; */
     /* position: relative; */
-    
+
 }
+
 .table_div_1 th,
 .table_div_2 td {
-  padding: 10px;
-  text-align: left;
-  /* justify-content: center; */
+    padding: 10px;
+    text-align: left;
+    /* justify-content: center; */
 }
 
 /* for tables images */
-.t_imges{
-height: 50px;
-width: 50px;
+.t_imges {
+    height: 50px;
+    width: 50px;
 
 
-/* position: absolute; */
+    /* position: absolute; */
 }
 
-.td_img_p{
+.td_img_p {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -552,19 +589,20 @@ width: 50px;
 
 
 
-.ids{
-    color:rgb(168, 164, 177);
+.ids {
+    color: rgb(168, 164, 177);
 }
+
 /* #T_img1{
     position: absolute;
 } */
 
-.positive{
+.positive {
     color: rgb(77, 184, 51);
     font-size: 1.1rem;
 }
 
-.negative{
+.negative {
     color: rgb(233, 73, 73);
     font-size: 1.1rem;
 
@@ -573,14 +611,15 @@ width: 50px;
 
 /* now working on view all collection button in section 2  */
 
-.view-all-coll-btn{
+.view-all-coll-btn {
     /* background-color: red; */
     /* padding: 20px; */
     width: 95%;
     margin: auto;
     text-align: center;
 }
-.view-all-coll-btn button{
+
+.view-all-coll-btn button {
     width: 100%;
     padding: 1rem;
     border-radius: 15px;
@@ -598,25 +637,28 @@ width: 50px;
 
 /* now working on section 3 from here section 3 is started */
 
-#section3{
+#section3 {
     /* background-color: red; */
- 
+
     /* height: 100vh; */
 }
-.S_main_all{
-margin-top: 9rem; ;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-position: relative;
+
+.S_main_all {
+    margin-top: 9rem;
+    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.heading_S_div{
+.heading_S_div {
     display: flex;
     justify-content: space-between;
 }
-.view_more{
+
+.view_more {
     border: 2px solid rgb(62, 81, 253);
     background-color: transparent;
     color: white;
@@ -629,32 +671,32 @@ position: relative;
 
 /* from here i am working on the main div of cards */
 
-.slider{ 
+.slider {
     /* background-color: red; */
     overflow: hidden;
     width: 80%;
     height: 75vh;
-   
+
     display: flex;
     flex-direction: column;
-  /* padding-left: 1rem; */
+    /* padding-left: 1rem; */
     align-items: center;
     margin-top: 5rem;
     position: relative;
     /* padding: 2rem; */
 }
 
-.cards{
+.cards {
     border-radius: 30px;
     width: 32%;
-    background-color:rgb(43, 33, 63);
+    background-color: rgb(43, 33, 63);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
     margin-left: 1rem;
-    margin-right: 1rem;  
+    margin-right: 1rem;
     transition: transform 0.1s ease;
     transform-style: preserve-3d;
     will-change: transform;
@@ -665,8 +707,8 @@ position: relative;
     transition: 0.4s ease-in-out;
     cursor: pointer;
     transform: translateZ(12px);
-    
-      
+
+
 }
 
 .for_nft_img {
@@ -675,16 +717,17 @@ position: relative;
     justify-content: center;
 
 }
-.cards .for_nft_img img{
+
+.cards .for_nft_img img {
     width: 100%;
     padding: 50px;
     height: 100%;
-  
+
 }
 
 /* now working on the time div in sec 3 */
 
-.for_timer{
+.for_timer {
     margin: 0 auto;
     position: absolute;
     top: 75%;
@@ -702,9 +745,10 @@ position: relative;
 .for_timer i {
     font-size: 1.5em;
 }
+
 /* now working on the title of s3 cards */
 
-.for_title{
+.for_title {
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
@@ -713,12 +757,14 @@ position: relative;
     flex-wrap: wrap;
     color: rgb(168, 164, 177);
 }
-.for_title h2{
+
+.for_title h2 {
     color: white;
-    font-size:1.5rem ;
+    font-size: 1.5rem;
     padding: 10px;
 }
-.for_title h3{
+
+.for_title h3 {
     font-size: 1.4rem;
     background-color: blue;
     padding: 10px 15px;
@@ -729,17 +775,17 @@ position: relative;
 
 /* this is for profile in s3 cards */
 
-.for_profile{
-    margin-top:1rem ;
+.for_profile {
+    margin-top: 1rem;
     display: grid;
-    grid-template-columns: 90px 1fr 1fr ;
-    width:85%;
+    grid-template-columns: 90px 1fr 1fr;
+    width: 85%;
     gap: 0.5rem;
-    margin-bottom:1rem ;
+    margin-bottom: 1rem;
     /* gap: rem; */
 }
 
-.for_profile > div > p{
+.for_profile>div>p {
     color: rgb(143, 156, 169);
 }
 
@@ -747,23 +793,23 @@ position: relative;
     width: 100%;
 }
 
-.for_p_img img{
+.for_p_img img {
     width: 100%;
 }
 
 
-.content{
-display: flex;
-flex-direction: column;
-gap: 1.1rem;    
-font-size: 1.4rem;
-justify-content: center;
-color: white;
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    font-size: 1.4rem;
+    justify-content: center;
+    color: white;
 }
 
 
 .for_p_currency {
-text-align: end;
+    text-align: end;
 }
 
 
@@ -774,9 +820,9 @@ text-align: end;
     justify-content: space-between;
     margin-top: 0px;
     z-index: 10;
-  }
-  
-  .slider-buttons button {
+}
+
+.slider-buttons button {
     border-radius: 20px;
     background-color: rgb(43, 34, 64);
     height: 72vh;
@@ -790,73 +836,117 @@ text-align: end;
     font-size: 3rem;
     top: 17%;
     padding: 0 1.5rem;
-  }
+}
 
-  .slider-buttons button > i {
+.slider-buttons button>i {
     color: grey !important;
-  }
+}
 
-  .next-button{
+.next-button {
     right: 5%;
-  }
-  .prev-button{
-    left: 5%;
-  }
+}
 
-  /* .slider-buttons button:hover {
+.prev-button {
+    left: 5%;
+}
+
+/* .slider-buttons button:hover {
     color: #e0e0e0 !important
   } */
-  
-  .slider-buttons button i {
+
+.slider-buttons button i {
     color: #000000;
-  }
+}
 
-  /* this is for the section 6 */
+/* this is for the section 6 */
 
- #section6{
+#section6 {
 
-    height: 90vh;
+    /* height: 90vh; */
     color: white;
- }
+}
 
 /* this is the heading of section 6 create ai */
- .sec6_heading{
+.sec6_heading {
     font-size: 2rem;
     font-weight: bolder;
     text-align: left;
     margin-top: 4rem;
 
- }
+}
+
 /* this is for the parent div of para and img */
-.sec6_2nd{
+.sec6_2nd {
+    /* hei */
+    /* position: relative; */
     display: flex;
+    justify-content: space-between;
+    /* background-color: green; */
+    gap: 2em;
+    /* height: auto; */
 }
 
 
 /* this css is  for the paragraph under h1  */
 
-.sec6_Para{
-    width: 70%;
-    /* background-color: red; */
-    font-size: 2rem;
+.sec6_Para {
+    width: 60%;
+    /* background-color: rgb(158, 135, 135); */
+    font-size: 1.9rem;
     /* font-weight: bolder; */
     line-height: 1.8;
     text-align: left;
     margin: 6rem 0;
-    padding: 1rem 0; 
+
+    padding-top: 4rem;
 }
 
 /* this is for the image beside the paragraph */
 
-.sec6_img{
-    width: 30%;
+.sec6_img {
+
+    width: 40%;
     height: fit-content;
-    margin: 6rem 0;
+    /* background-color: red; */
+    /* margin-top: 6rem ; */
 }
 
-.sec6_img img{
-    width: 100%;
-    /* height: fit-content; */
-    /* background-color: yellow; */
+.sec6_img img {
+    width: 90%;
+
+
+
     object-fit: contain;
+}
+
+
+/* now styling to the cards of section 6  */
+
+.sec6_Cards {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.s6_card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    border-bottom: 1px solid white;
+    border-left: 50% solid white;
+    border-right: 50% solid white;
+    
+}
+
+/* here stuling for headtinh h3 */
+
+.s6_card h3 {
+    font-size: 1.3rem;
+}
+
+.s6_card p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
