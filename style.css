@@ -980,7 +980,7 @@ nav li:first-child{
     border-image: linear-gradient(to bottom, rgb(42, 32, 63)30%, rgba(255, 255, 255, 0.424));
     background: rgb(42, 32, 63);
     border-image-slice: 1;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     border-radius: 15px; 
     overflow: hidden;
@@ -1000,4 +1000,22 @@ nav li:first-child{
     line-height: 1.8;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+}
+
+
+/* now working on the section 7 */
+
+
+.s7_main{
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.s7_h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 5rem 0;
 }
