@@ -1010,7 +1010,7 @@ nav li:first-child{
 
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
 }
 
 .s7_h1{
@@ -1018,4 +1018,42 @@ nav li:first-child{
     font-weight: 400;
     font-size: 2rem;
     margin: 5rem 0;
+}
+
+
+
+/* paret */
+
+.s7_par_img{
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.s7_img{
+    width: 33%;
+    border-radius: 50%;
+    overflow: hidden;
+    background:linear-gradient(to bottom,rgb(97, 87, 199) , rgb(42, 5, 92) );
+    
+}
+
+.s7_img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.s7_textArea{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    width: 50%;
+}
+
+
+.s7_rows{
+    display: flex;
 }
