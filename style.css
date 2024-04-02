@@ -1010,7 +1010,8 @@ nav li:first-child{
 
     color: white;
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column ;
+    margin-bottom: 5rem;
 }
 
 .s7_h1{
@@ -1025,35 +1026,72 @@ nav li:first-child{
 /* paret */
 
 .s7_par_img{
+    position: relative;
     display: flex;
     flex-direction: row;
-    background-color: green;
+    /* background-color: green; */
     gap: 2rem;
     justify-content: space-between;
 }
 
+.s7_dotted_circle{
+    height: 58vh;
+    width: 32%;
+    position: absolute;
+    left: 4rem;
+    top: 4rem;
+    border-radius: 50%;
+    border: 2px dashed white;
+    z-index: 2;
+}
+
 .s7_img{
+    /* position: relative; */
     width: 33%;
     border-radius: 50%;
     overflow: hidden;
-    background:linear-gradient(to bottom,rgb(97, 87, 199) , rgb(42, 5, 92) );
-    
+    /* background:linear-gradient(to bottom,rgb(97, 87, 199) , rgb(42, 5, 92) ); */
+    /* z-index: 5; */
+
 }
 
 .s7_img img{
+    z-index: 6;
+    position: relative;
     width: 100%;
     object-fit: cover;
+    background:linear-gradient(to bottom,rgb(97, 87, 199) , rgb(42, 5, 92) );
+
 }
+
+/* above code is end here */
+/* now styling is for the text area */
 
 
 .s7_textArea{
     display: flex;
     flex-direction: column;
+    padding: 1rem;
     background-color: blue;
-    width: 50%;
+    width: 60%;
+    gap: 4rem;
 }
 
 
 .s7_rows{
-    display: flex;
+    display: grid;
+    grid-template-columns:  auto 1fr auto;
+    background-color: red;
+    padding: 1.5rem 0.5rem ;
+    gap: 2rem;
+}
+
+.s7_rows p {
+    font-size: 1.2rem;
+}
+
+
+.s7_rows i {
+    /* background-color: yellow; */
+
 }
