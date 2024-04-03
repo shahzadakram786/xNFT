@@ -96,18 +96,18 @@ ul li a {
 
 /* now i am making for the responsive  */
 
-nav li:first-child{
+nav li:first-child {
     margin-right: auto;
 }
 
-.siderbar{
+.siderbar {
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     width: 250px;
     z-index: 99;
-    background-color:rgba(255, 255, 255, 0.023);
+    background-color: rgba(255, 255, 255, 0.023);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -121,10 +121,12 @@ nav li:first-child{
 .siderbar li {
     width: 100%;
 }
+
 .siderbar a {
     width: 100%;
 }
-.menu-button{
+
+.menu-button {
     display: none;
 }
 
@@ -982,7 +984,7 @@ nav li:first-child{
     border-image-slice: 1;
     border-width: 2px;
     border-style: solid;
-    border-radius: 15px; 
+    border-radius: 15px;
     overflow: hidden;
 
 }
@@ -1006,15 +1008,15 @@ nav li:first-child{
 /* now working on the section 7 */
 
 
-.s7_main{
+.s7_main {
 
     color: white;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     margin-bottom: 5rem;
 }
 
-.s7_h1{
+.s7_h1 {
     text-align: center;
     font-weight: 400;
     font-size: 2rem;
@@ -1025,7 +1027,7 @@ nav li:first-child{
 
 /* paret */
 
-.s7_par_img{
+.s7_par_img {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -1034,7 +1036,7 @@ nav li:first-child{
     justify-content: space-between;
 }
 
-.s7_dotted_circle{
+.s7_dotted_circle {
     height: 58vh;
     width: 32%;
     position: absolute;
@@ -1045,7 +1047,7 @@ nav li:first-child{
     z-index: 2;
 }
 
-.s7_img{
+.s7_img {
     /* position: relative; */
     width: 33%;
     border-radius: 50%;
@@ -1055,12 +1057,12 @@ nav li:first-child{
 
 }
 
-.s7_img img{
+.s7_img img {
     z-index: 6;
     position: relative;
     width: 100%;
     object-fit: cover;
-    background:linear-gradient(to bottom,rgb(97, 87, 199) , rgb(42, 5, 92) );
+    background: linear-gradient(to bottom, rgb(97, 87, 199), rgb(42, 5, 92));
 
 }
 
@@ -1068,30 +1070,47 @@ nav li:first-child{
 /* now styling is for the text area */
 
 
-.s7_textArea{
+.s7_textArea {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    background-color: blue;
+    /* background-color: blue; */
     width: 60%;
     gap: 4rem;
 }
 
 
-.s7_rows{
+.s7_rows {
+    border: 1px solid rgb(189, 175, 175);
+    border-radius: 20px;
     display: grid;
-    grid-template-columns:  auto 1fr auto;
-    background-color: red;
-    padding: 1.5rem 0.5rem ;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    background-color: rgb(41, 31, 62);
     gap: 2rem;
+    overflow: hidden;
 }
 
 .s7_rows p {
     font-size: 1.2rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
 }
 
 
 .s7_rows i {
     /* background-color: yellow; */
+    padding: 1.5rem 0;
+    cursor: pointer;
+}
 
+.expand {
+    background: linear-gradient(to left bottom, rgb(97, 87, 199) 30px, rgb(43, 5, 92));
+    padding: 0.8rem 1.3rem;
+    border-radius: 0 18px 18px 0;
+}
+
+.ques {
+    padding-left: 1rem;
 }
