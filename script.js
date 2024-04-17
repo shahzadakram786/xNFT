@@ -632,3 +632,27 @@ const slideImage3 = () => {
     slide.style.transform = `translateX(-${count3 * 100}%)`;
   });
 };
+
+
+
+const down_event = document.getElementById("event-down");
+const show = document.getElementById("con-hid-1");
+
+down_event.addEventListener("click", () => {
+  if (show.style.display === "none" || show.style.display === "") {
+    show.style.display = "block";
+  } else {
+    show.style.display = "none";
+  }
+});
+
+
+// if (docCeo[0].style.display === "none" || docCeo[0].style.display === "") {
+ 
+//   docCeo[0].style.display = "block"; 
+//   e.target.innerHTML = "Back"; 
+// } else {
+//   // CEO section is visible
+//   docCeo[0].style.display = "none"; // Hide the CEO section
+//   e.target.innerHTML = "CEO"; // Change CeoBtn text back to "CEO"
+// }

@@ -1082,7 +1082,7 @@ nav li:first-child {
 
 .s7_rows {
     border: 1px solid rgb(189, 175, 175);
-    border-radius: 20px;
+    border-radius: 10px;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
@@ -1100,15 +1100,28 @@ nav li:first-child {
 
 
 .s7_rows i {
-    /* background-color: yellow; */
-    padding: 1.5rem 0;
     cursor: pointer;
+}
+
+
+
+.s7-hid-p{
+    display: none;
+    width: 92%;
+    border-radius: 10px;
+    margin-top: -4rem;
+    color: white;
+    padding: 3rem 1rem ;
+    background: rgb(41, 31, 62);
+    line-height: 2;
+  
+
 }
 
 .expand {
     background: linear-gradient(to left bottom, rgb(97, 87, 199) 30px, rgb(43, 5, 92));
     padding: 0.8rem 1.3rem;
-    border-radius: 0 18px 18px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 .ques {
