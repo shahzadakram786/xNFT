@@ -1037,7 +1037,8 @@ nav li:first-child {
 }
 
 .s7_dotted_circle {
-    height: 58vh;
+    /* height: 58vh; */
+    height: 28vmax;
     width: 32%;
     position: absolute;
     left: 4rem;
@@ -1050,6 +1051,7 @@ nav li:first-child {
 .s7_img {
     /* position: relative; */
     width: 33%;
+    height: 28vmax;
     border-radius: 50%;
     overflow: hidden;
     /* background:linear-gradient(to bottom,rgb(97, 87, 199) , rgb(42, 5, 92) ); */
@@ -1103,6 +1105,9 @@ nav li:first-child {
     cursor: pointer;
 }
 
+.cross{
+    display: none;
+}
 
 
 .s7-hid-p{
@@ -1118,12 +1123,28 @@ nav li:first-child {
 
 }
 
-.expand {
+.expand , .cross {
     background: linear-gradient(to left bottom, rgb(97, 87, 199) 30px, rgb(43, 5, 92));
     padding: 0.8rem 1.3rem;
     border-radius: 0 10px 10px 0;
+    transition: 2s ease;
 }
 
 .ques {
     padding-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* wirking on the footer  */
+#section8-footer{
+    height: 90vh ;
+    width: 100%;
 }

@@ -637,12 +637,21 @@ const slideImage3 = () => {
 
 const down_event = document.getElementById("event-down");
 const show = document.getElementById("con-hid-1");
+const cross_icon =  document.getElementById("cross-1");
+const expand_icon =  document.getElementById("expand-1"); 
+
+
 
 down_event.addEventListener("click", () => {
   if (show.style.display === "none" || show.style.display === "") {
     show.style.display = "block";
+    
+    cross_icon.style.display = "block";
+    expand_icon.style.display = "none";
   } else {
     show.style.display = "none";
+    expand_icon.style.display = "block";
+    cross_icon.style.display = "none";
   }
 });
 
