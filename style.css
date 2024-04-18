@@ -1007,13 +1007,18 @@ nav li:first-child {
 
 /* now working on the section 7 */
 
+/* #section7 {
+    margin-bottom: 5rem;
+    background-color: red;
+} */
 
 .s7_main {
 
     color: white;
     display: flex;
     flex-direction: column;
-    margin-bottom: 5rem;
+    /* background-color: red; */
+    margin-bottom: 10rem;
 }
 
 .s7_h1 {
@@ -1144,7 +1149,47 @@ nav li:first-child {
 
 
 /* wirking on the footer  */
-#section8-footer{
+/* #section8-footer{
     height: 90vh ;
     width: 100%;
+} */
+
+.footer-main{
+    color: white;
+}
+.footer-inside-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.s8_para{
+    width: 20%;
+    font-size: 1vmax;
+    text-align: left;
+    line-height: 2;
+    padding: 2rem 0;
+    color: white;
+}
+
+.s8_Legal h1 , .s8_help h1 , .s8_contact h1{
+    color: white;
+    font-size: 1.5vmax;
+    padding-bottom : 1rem;
+    margin-bottom: 2rem;
+ }
+.s8_Legal > div , .s8_help > div ,.s8_contact > div{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.s8_Legal a ,.s8_help a , .s8_contact a{
+    text-decoration: none    ;
+    color:white;
+    font-size: 1vmax;
+}
+.footer-inside-main > div{
+    /* background:green; */
 }

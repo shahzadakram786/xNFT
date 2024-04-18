@@ -655,13 +655,19 @@ down_event .addEventListener("click", ()=> {
 
   if (show.style.display === "none" || show.style.display === "") {
     show.style.display = "block";
+    // show.style.transition = "0.4s ease"
     
     cross_icon.style.display = "block";
+    // cross_icon.style.transition = "0.4s ease"
     expand_icon.style.display = "none";
+    // expand_icon.style.transition = "0.4s ease"
   } else {
     show.style.display = "none";
+    // show.style.transition = "0.4s ease"
     expand_icon.style.display = "block";
+    // expand_icon.style.transition = "0.4s ease"
     cross_icon.style.display = "none";
+    // cross_icon.style.transition = "0.4s ease"
   }
 
 })
