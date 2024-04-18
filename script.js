@@ -635,14 +635,24 @@ const slideImage3 = () => {
 
 
 
-const down_event = document.getElementById("event-down");
-const show = document.getElementById("con-hid-1");
-const cross_icon =  document.getElementById("cross-1");
-const expand_icon =  document.getElementById("expand-1"); 
 
 
 
-down_event.addEventListener("click", () => {
+
+
+
+function toogle(eventDown , showPara , expandICon , closeIcon){
+const down_event  =  document.getElementById(eventDown);
+const show        =  document.getElementById(showPara);
+const cross_icon  =  document. getElementById(expandICon);
+const expand_icon =  document.getElementById(closeIcon); 
+
+
+down_event .addEventListener("click", ()=> {
+
+ 
+
+
   if (show.style.display === "none" || show.style.display === "") {
     show.style.display = "block";
     
@@ -653,8 +663,116 @@ down_event.addEventListener("click", () => {
     expand_icon.style.display = "block";
     cross_icon.style.display = "none";
   }
-});
 
+})
+
+
+}
+
+toogle("event-down", "con-hid-1", "cross-1", "expand-1");
+toogle("event-down-2", "con-hid-2", "cross-2", "expand-2");
+toogle("event-down-3", "con-hid-3", "cross-3", "expand-3");
+toogle("event-down-4", "con-hid-4", "cross-4", "expand-4");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const down_event = document.getElementById("event-down");
+// const show = document.getElementById("con-hid-1");
+// const cross_icon =  document. getElementById ("cross-1");
+// const expand_icon =  document.getElementById("expand-1"); 
+
+
+
+// down_event.addEventListener("click", () => {
+//   if (show.style.display === "none" || show.style.display === "") {
+//     show.style.display = "block";
+    
+//     cross_icon.style.display = "block";
+//     expand_icon.style.display = "none";
+//   } else {
+//     show.style.display = "none";
+//     expand_icon.style.display = "block";
+//     cross_icon.style.display = "none";
+//   }
+// });
+
+
+
+
+// const down_event_2 = document.getElementById("event-down-2");
+// const show_2 = document.getElementById("con-hid-2");
+// const cross_icon_2 =  document. getElementById ("cross-2");
+// const expand_icon_2 =  document.getElementById("expand-2"); 
+
+
+
+// down_event_2.addEventListener("click", () => {
+//   if (show_2.style.display === "none" || show_2.style.display === "") {
+//     show_2.style.display = "block";
+    
+//     cross_icon_2.style.display = "block";
+//     expand_icon_2.style.display = "none";
+//   } else {
+//     show_2.style.display = "none";
+//     expand_icon_2.style.display = "block";
+//     cross_icon_2.style.display = "none";
+//   }
+// });
+
+
+
+// const down_event_3 = document.getElementById("event-down-3");
+// const show_3 = document.getElementById("con-hid-3");
+// const cross_icon_3 =  document. getElementById ("cross-3");
+// const expand_icon_3 =  document.getElementById("expand-3"); 
+
+
+
+// down_event_3.addEventListener("click", () => {
+//   if (show_3.style.display === "none" || show_3.style.display === "") {
+//     show_3.style.display = "block";
+    
+//     cross_icon_3.style.display = "block";
+//     expand_icon_3.style.display = "none";
+//   } else {
+//     show_3.style.display = "none";
+//     expand_icon_3.style.display = "block";
+//     cross_icon_3.style.display = "none";
+//   }
+// });
+
+
+
+// const down_event_4 = document.getElementById("event-down-4");
+// const show_4 = document.getElementById("con-hid-4");
+// const cross_icon_4 =  document. getElementById ("cross-4");
+// const expand_icon_4 =  document.getElementById("expand-4"); 
+
+
+
+// down_event_4.addEventListener("click", () => {
+//   if (show_4.style.display === "none" || show_4.style.display === "") {
+//     show_4.style.display = "block";
+    
+//     cross_icon_4.style.display = "block";
+//     expand_icon_4.style.display = "none";
+//   } else {
+//     show_4.style.display = "none";
+//     expand_icon_4.style.display = "block";
+//     cross_icon_4.style.display = "none";
+//   }
+// });
 
 // if (docCeo[0].style.display === "none" || docCeo[0].style.display === "") {
  
